@@ -1,0 +1,56 @@
+#include <stdio.h>
+
+float getimc(float peso, float altura)
+{
+	return peso / (altura*altura);
+}
+
+
+void escreveCategoria (float imc)
+
+{
+
+if (imc < 19)
+	printf("A categoria é Magro\n");
+
+else if (imc >= 19 && imc < 25x)
+	printf("A categoria é Normal\n");
+
+else if (imc >= 25 && imc <= 30)
+	printf("A categoria é Excesso de peso\n");
+
+else if (imc>30 && imc<=40)
+	printf("A categoria é Obeso I\n");
+
+else 
+	printf("A categoria é Obeso II\n");	
+	
+}
+
+float peso_minimo(float altura)
+{
+	float PMI = 19 * (altura*altura);
+	return PMI;
+}
+
+float peso_maximo(float altura)
+{
+	float PMA = 25 * (altura*altura);
+	return PMA;
+}
+
+
+int main(void)
+{
+	float peso, altura; 
+	printf("Introduza a sua altura:\n");
+	scanf("%f", &altura);	
+	printf("Introduza o seu peso:\n");
+	scanf("%f", &peso);
+	printf("O seu peso maximo e %.2f \n", peso_maximo(altura));
+	printf("O seu peso minimo e %.2f \n", peso_minimo(altura));
+	printf("O seu IMC e %0.2f \n", getimc(peso, altura));
+	escreveCategoria(getimc(peso, altura));
+
+	return 0;
+}
