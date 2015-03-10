@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define VECMAX 20
+
+void read_vector(int v[], int n)
+{
+	int i = 0;
+	while (n > i && leitura > 0)
+	{
+		scanf("%d", leitura);
+		v[i] = num 
+		i++;
+	}
+}
+	
+void write_vector(int v[], int n)
+{
+	for(i = 0, (v[i] > 0) || n > i , i++)
+	printf("%d\n", v[i])
+}
+
+
+int main()
+{	
+	int inicial[VECMAX];
+	buffer = read_vector(inicial, VECMAX);
+	write_vector(buffer, VECMAX);
+	return 0;
+}
