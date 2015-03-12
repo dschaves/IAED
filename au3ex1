@@ -25,4 +25,4 @@ int main()
 	buffer = read_vector(inicial, VECMAX);
 	write_vector(buffer, VECMAX);
 	return 0;
-}
+
